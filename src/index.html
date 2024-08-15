@@ -6,19 +6,15 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-stone-500">
-    <div id="navbar" class="bg-stone-700 sticky top-0 z-50">
-      <div class="container mx-auto sm:flex justify-between font-sans">
-        <a href="./index.html">
-          <h1 class="text-2xl font-bold mx-3 py-3 text-center text-white hover:-translate-y-1 hover:scale-110">Yuk Belajar Tailwind</h1>
-        </a>
-        <div class="flex text-lg items-center text-white">
-          <!-- <button class="mx-2 px-6 py-2 hover:bg-red-100 hover:text-pink-800 rounded-lg items-center">Isi</button>
-          <button class="mx-2 px-6 py-2 hover:bg-red-100 hover:text-pink-800 rounded-lg items-center">Isi</button>
-          <button class="mx-2 px-6 py-2 hover:bg-red-100 hover:text-pink-800 rounded-lg items-center">Isi</button>
-          <button class="mx-2 px-6 py-2 hover:bg-red-100 hover:text-pink-800 rounded-lg items-center">Isi</button> -->
-        </div>
-      </div>
-    </div>
+    <div id="navbar-container" class="sticky top-0 z-50"></div>
+
+    <script>
+      fetch("./navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
     <div id="gambar" class="flex items-center justify-center">
       <div class="size-fit">
         <img src="../src/img/fresh.png" alt="" />
@@ -54,6 +50,21 @@
             </td>
             <td class="p-10 border-b-2 border-gray-800">
               <a href="../src/pages/typography.html">
+                <button class="py-2 px-6 bg-stone-700 rounded-xl text-white hover:-translate-y-1 hover:text-gray-700 hover:scale-110 hover:bg-white">START</button>
+              </a>
+            </td>
+          </tr>
+          <tr class="">
+            <td class="p-10 border-b-2 border-gray-800">
+              <p>LET'S LEARN</p>
+              <h1 class="text-xl font-bold">TOGETHER</h1>
+            </td>
+            <td class="p-10 border-b-2 border-gray-800">
+              <h1 class="text-3xl font-bold">EFFECT</h1>
+              <p>Box Shadow, Box Shadow Color, Opacity</p>
+            </td>
+            <td class="p-10 border-b-2 border-gray-800">
+              <a href="../src/pages/effect.html">
                 <button class="py-2 px-6 bg-stone-700 rounded-xl text-white hover:-translate-y-1 hover:text-gray-700 hover:scale-110 hover:bg-white">START</button>
               </a>
             </td>

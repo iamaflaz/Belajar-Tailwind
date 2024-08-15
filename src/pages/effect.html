@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-stone-500">
+    <div id="navbar-container" class="sticky top-0 z-50"></div>
+    <script>
+      fetch("../navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
+
+    <div id="box-shadow" class="flex items-center justify-center p-6">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold hover:underline m-6 text-white">Box Shadow</h1>
+        <p class="text-white">"Utilities for controlling the box shadow of an element."</p>
+        <div class="flex items-center justify-center">
+          <div class="rounded border-stone-800 bg-stone-300 p-2 m-6 shadow-md">Shadow-md</div>
+          <div class="rounded border-stone-800 bg-stone-300 p-2 m-6 shadow-lg">Shadow-lg</div>
+          <div class="rounded border-stone-800 bg-stone-300 p-2 m-6 shadow-xl">Shadow-xl</div>
+        </div>
+      </div>
+    </div>
+    <div id="shadow-color" class="flex items-center justify-center p-6">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold hover:underline m-6 text-white">Shadow Color</h1>
+        <p class="text-white">"Utilities for controlling the box shadow color of an element."</p>
+        <div class="flex items-center justify-center">
+          <div class="rounded bg-pink-500 shadow-lg shadow-pink-500/50 p-2 m-6 text-white">Color : Pink</div>
+          <div class="rounded bg-sky-500 shadow-lg shadow-sky-500/50 p-2 m-6 text-white">Color : Sky</div>
+          <div class="rounded bg-indigo-500 shadow-lg shadow-indigo-500/50 p-2 m-6 text-white">Color : Indigo</div>
+        </div>
+      </div>
+    </div>
+    <div id="opacity" class="flex items-center justify-center p-6">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold hover:underline m-6 text-white">Opacity</h1>
+        <p class="text-white">"Utilities for controlling the box shadow of an element."</p>
+        <div class="flex items-center justify-center">
+          <div class="rounded opacity-100 bg-indigo-500 shadow-lg shadow-indigo-500/50 p-2 m-6 text-white">Opacity 100</div>
+          <div class="rounded opacity-75 bg-indigo-500 shadow-lg shadow-indigo-500/50 p-2 m-6 text-white">Opacity 75</div>
+          <div class="rounded opacity-50 bg-indigo-500 shadow-lg shadow-indigo-500/50 p-2 m-6 text-white">Opacity 50</div>
+          <div class="rounded opacity-25 bg-indigo-500 shadow-lg shadow-indigo-500/50 p-2 m-6 text-white">Opacity 25</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
