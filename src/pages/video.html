@@ -5,99 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../output.css" rel="stylesheet" />
   </head>
-  <body class="bg-stone-500">
-    <div id="navbar-container" class="sticky top-0 z-50"></div>
-    <script>
-      fetch("./navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar-container").innerHTML = data;
-        });
-    </script>
+  <body>
+    <div class="bg-gradient-to-b from-black via-red-950 to-black">
+      <div id="navbar-container" class="sticky top-0 z-50"></div>
+      <script>
+        fetch("./navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-container").innerHTML = data;
+          });
+      </script>
 
-    <div id="layout">
-      <div class="container py-4 mx-auto flex items-center justify-center min-h-screen">
-        <iframe
-          class="w-full sm:w-3/4 md:w-1/2 aspect-video"
-          width="693"
-          height="390"
-          src="https://www.youtube.com/embed/2R_S5TgDWMY"
-          title="NCT DREAM 엔시티 드림 &#39;Broken Melodies&#39; MV"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="container py-4 mx-auto flex items-center justify-center min-h-screen">
-        <iframe
-          class="w-full sm:w-3/4 md:w-1/2 aspect-video sepia"
-          width="693"
-          height="390"
-          src="https://www.youtube.com/embed/qQOj-oKhItw"
-          title="NCT DREAM 엔시티 드림 &#39;Smoothie&#39; MV"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="text-center">
-        <h1 class="font-bold bg-stone-600 text-2xl text-white">Normal Version</h1>
-      </div>
-      <div class="flex items-center justify-center py-4">
-        <div class="flex py-6">
-          <div class="text-center">
+      <div id="layout">
+        <div class="container py-4 mx-auto flex items-center justify-center min-h-screen">
+          <iframe
+            class="w-full sm:w-3/4 md:w-1/2 aspect-video"
+            width="693"
+            height="390"
+            src="https://www.youtube.com/embed/2R_S5TgDWMY"
+            title="NCT DREAM 엔시티 드림 &#39;Broken Melodies&#39; MV"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="container py-4 mx-auto flex items-center justify-center min-h-screen">
+          <iframe
+            class="w-full sm:w-3/4 md:w-1/2 aspect-video sepia"
+            width="693"
+            height="390"
+            src="https://www.youtube.com/embed/qQOj-oKhItw"
+            title="NCT DREAM 엔시티 드림 &#39;Smoothie&#39; MV"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="text-center">
+          <h1 class="font-bold bg-stone-600 text-2xl text-white">Normal Version</h1>
+        </div>
+        <div class="flex items-center justify-center columns-3 py-4">
+          <div class="text-center py-4">
             <img class="w-40 h-60 object-cover mx-2" src="/src/img/nono.jpg" alt="" />
             <p class="mt-2 font-bold text-white">Lee Jeno</p>
           </div>
-          <div class="text-center">
+          <div class="text-center py-4">
             <img class="w-40 h-60 object-cover mx-2" src="/src/img/jeje.jpg" alt="" />
             <p class="mt-2 font-bold text-white">Jeong Jaehyun</p>
           </div>
-          <div class="text-center">
+          <div class="text-center py-4">
             <img class="w-40 h-60 object-cover mx-2" src="/src/img/nana.jpg" alt="" />
             <p class="mt-2 font-bold text-white">Na Jaemin</p>
           </div>
         </div>
-      </div>
-      <div class="text-center">
-        <h1 class="font-bold bg-stone-600 text-2xl text-yellow-200">Sepia Version</h1>
-      </div>
-      <div class="flex items-center justify-center py-4">
-        <div class="flex py-6">
-          <div class="text-center">
-            <img class="w-40 h-60 object-cover sepia mx-2" src="/src/img/nono.jpg" alt="" />
+        <div class="text-center">
+          <h1 class="font-bold bg-stone-600 text-2xl text-yellow-200">Sepia Version</h1>
+        </div>
+        <div class="flex items-center justify-center columns-3 py-4">
+          <div class="text-center py-4">
+            <img class="w-40 h-60 object-cover mx-2 sepia" src="/src/img/nono.jpg" alt="" />
             <p class="mt-2 font-bold text-white">Lee Jeno</p>
           </div>
-          <div class="text-center">
-            <img class="w-40 h-60 object-cover sepia mx-2" src="/src/img/jeje.jpg" alt="" />
+          <div class="text-center py-4">
+            <img class="w-40 h-60 object-cover mx-2 sepia" src="/src/img/jeje.jpg" alt="" />
             <p class="mt-2 font-bold text-white">Jeong Jaehyun</p>
           </div>
-          <div class="text-center">
-            <img class="w-40 h-60 object-cover sepia mx-2" src="/src/img/nana.jpg" alt="" />
+          <div class="text-center py-4">
+            <img class="w-40 h-60 object-cover mx-2 sepia" src="/src/img/nana.jpg" alt="" />
             <p class="mt-2 font-bold text-white">Na Jaemin</p>
           </div>
         </div>
-      </div>
-      <div class="text-center">
-        <h1 class="font-bold bg-stone-600 text-2xl text-white">Muter Version</h1>
-      </div>
-      <div class="flex items-center justify-center py-4">
-        <div class="flex py-6">
-          <div class="text-center">
+        <div class="text-center">
+          <h1 class="font-bold bg-stone-600 text-2xl text-white">Muter Version</h1>
+        </div>
+        <div class="flex items-center justify-center columns-3 py-4">
+          <div class="text-center py-4">
             <img class="w-40 h-60 object-cover mx-12 rotate-12" src="/src/img/nono.jpg" alt="" />
           </div>
-          <div class="text-center">
+          <div class="text-center py-4">
             <img class="w-40 h-60 object-cover mx-12 rotate-180" src="/src/img/jeje.jpg" alt="" />
           </div>
-          <div class="text-center">
+          <div class="text-center py-4">
             <img class="w-40 h-60 object-cover mx-12 -rotate-12" src="/src/img/nana.jpg" alt="" />
           </div>
         </div>
-      </div>
-      <div class="text-end py-4">
-        <p class="text-white">Mau bagaimanapun mereka tetap tampan :)</p>
+        <div class="text-end py-4">
+          <p class="text-white">Mau bagaimanapun mereka tetap tampan :)</p>
+        </div>
       </div>
     </div>
   </body>
